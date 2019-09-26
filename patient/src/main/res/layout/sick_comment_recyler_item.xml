@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sick_comment_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:roundAsCircle="true" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="@dimen/dp_260"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@id/sick_comment_picture"
+            android:background="@drawable/comment_shape">
+
+            <TextView
+                android:id="@+id/sick_comment_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="小娜娜"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/sick_comment_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sick_comment_nickName"
+                android:lineSpacingMultiplier="1.5"
+                android:text="每个网易的评论下面都要有一个学霸几个破鞋想不开的，几个文艺装比的，还有几个抄段子的。"
+                android:textColor="#333"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/sick_comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sick_comment_context"
+                android:layout_marginTop="16dp"
+                android:text="2018-02-20"
+                android:textColor="#333"
+                android:textSize="@dimen/sp_11"
+                android:layout_marginBottom="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/sick_comment_disagree"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_below="@+id/sick_comment_context"
+                android:layout_marginLeft="@dimen/dp_110"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_toRightOf="@id/sick_comment_time"
+                android:src="@drawable/common_icon_agree_n" />
+
+            <TextView
+                android:id="@+id/sick_coment_disagreenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sick_comment_context"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_toRightOf="@id/sick_comment_disagree"
+                android:textColor="#333"
+                android:text="15"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/sick_comment_agree"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_below="@+id/sick_comment_context"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_toRightOf="@id/sick_coment_disagreenum"
+                android:src="@drawable/common_icon_disagree_n" />
+
+            <TextView
+                android:id="@+id/sick_coment_agreenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sick_comment_context"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_toRightOf="@id/sick_comment_agree"
+                android:textColor="#333"
+                android:text="5"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

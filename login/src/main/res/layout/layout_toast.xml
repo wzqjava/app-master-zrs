@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="236dp"
+    android:layout_height="36dp"
+    android:background="@drawable/shape_toast"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/toast_iv"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:paddingStart="10dp"
+        android:src="@drawable/login_warning" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/toast_tv"
+        style="@style/TV14White"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingEnd="10dp"
+        android:text="2222222222222222222" />
+
+
+</LinearLayout>

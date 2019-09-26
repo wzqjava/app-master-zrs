@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/comment_recycler"
+        android:layout_margin="10dp"
+        ></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/common_button_close_n"
+            android:layout_margin="20dp"
+            android:id="@+id/stub_close"
+            />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@+id/stub_close"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_shape"
+            android:hint="     在此留下高见吧！！"
+            android:textColorHint="#FFFFFF"
+            android:id="@+id/stub_edit"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

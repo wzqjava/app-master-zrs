@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".NewPwdActivity">
+
+    <include layout="@layout/layout_top_navigation_white" />
+
+    <RelativeLayout
+        android:id="@+id/login_input_rl"
+        android:layout_width="280dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/shape_white_rl1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/login_input_pwd1_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:paddingTop="30dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/login_input_new_pwd1"
+                style="@style/TV14Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/login_correct_new_pwd"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/login_input_show1"
+                style="@style/IV16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/login_icon_hide_password_n" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/login_input_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/login_input_pwd1_rl1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorAppGrey" />
+
+        <RelativeLayout
+            android:id="@+id/login_input_pwd1_rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_input_line1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/login_input_new_pwd2"
+                style="@style/TV14Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/login_correct_new_pwd_enter"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/login_input_show2"
+                style="@style/IV16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_icon_hide_password_n" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/login_input_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/login_input_pwd1_rl2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorAppGrey" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="5dp"
+        android:background="@drawable/shape_white_rl3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_input_rl" />
+
+    <View
+        android:id="@+id/login_view_line"
+        android:layout_width="240dp"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_white_rl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_input_rl" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/login_input_complete"
+        style="@style/BTWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:windowSoftInputMode="adjustResize"
+        android:gravity="center"
+        android:text="@string/login_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

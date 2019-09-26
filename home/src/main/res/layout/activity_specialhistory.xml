@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SpecialHistoryActivity">
+
+    <com.wd.health.home.customview.IncludeHeader
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:headerImage="@drawable/common_icon_back_black_n"
+        app:headerMessage="1"
+        app:headerText="历史问诊"></com.wd.health.home.customview.IncludeHeader>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#E4D2D2" />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/history_recy"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".activity.InquiryActivity">
+
+    <com.wd.health.home.customview.IncludeHeader
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        app:headerText=""></com.wd.health.home.customview.IncludeHeader>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#E7D4D4" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/onerecycel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E7D4D4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablaouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.TabLayout>
+
+        <ImageView
+            android:id="@+id/priceup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/common_button_descending_s" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/aaa"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mybiankuang">
+
+
+            <ImageView
+                android:id="@+id/drocterimg"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drocterimg"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/derctername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="周杰伦"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"/>
+
+                        <TextView
+                            android:id="@+id/dercterzw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/derctername"
+                            android:text="主任医师"
+                            />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/derctername"
+                            android:layout_marginTop="5dp"
+                            android:text="天津医院"
+                            android:layout_marginLeft="20dp"/>
+
+                        <TextView
+                            android:id="@+id/dercterhp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/address"
+                            android:layout_marginTop="5dp"
+                            android:text="好评"
+                            android:layout_marginLeft="20dp"/>
+
+                        <TextView
+                            android:id="@+id/servercenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/address"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/address"
+                            android:text="服务数"
+                            />
+
+                        <ImageView
+                            android:id="@+id/moreimg"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/common_icon_more_n" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/monery"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/mybiankuang"
+                            android:gravity="center"
+                            android:text="500H币/次"
+                            android:textSize="20dp"
+
+                            />
+
+                        <Button
+                            android:id="@+id/zixun"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#A17BE4"
+                            android:text="立即咨询"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aaa">
+
+            <ImageView
+                android:id="@+id/lefth"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_toLeftOf="@id/towrecycel"
+                android:src="@drawable/common_list_previous_n" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/towrecycel"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/righth"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/towrecycel"
+                android:src="@drawable/common_information_next_n" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

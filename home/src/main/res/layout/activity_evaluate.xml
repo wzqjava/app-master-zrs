@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.EvaluateActivity">
+
+
+    <com.wd.health.home.customview.IncludeHeader
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:headerImage="@drawable/common_icon_back_black_n"
+        app:headerMessage="1"
+        app:headerText="问诊服务评价"></com.wd.health.home.customview.IncludeHeader>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/edtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pjtext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="请输入你对医生的评价"
+            android:textColorHint="#999999" />
+
+        <TextView
+            android:id="@+id/shb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@id/pjtext"
+            android:text="(送H币)"
+            android:textColor="#333333"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/pjtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/views"
+            android:text="文字评价"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/views"
+            android:layout_width="4dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="#3087ea" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#E7DADA" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="20dp"
+            android:layout_width="4dp"
+            android:background="#3087ea"
+            android:id="@+id/views1"
+            android:layout_height="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星级评价"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/xingji"
+            android:layout_toRightOf="@id/views1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医生专业度"
+            android:layout_below="@id/views1"
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/drocterzyd"
+            />
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_below="@id/views1"
+            android:isIndicator="false"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/drocterzyd"
+            android:layout_marginLeft="20dp"
+            android:stepSize="1"
+            android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_toRightOf="@id/ratingBar1"
+            android:layout_below="@id/xingji"
+            android:layout_marginLeft="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/xx"
+            android:visibility="gone"
+            android:src="@drawable/evaluation_icon_angry_n"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务满意度"
+            android:layout_below="@id/drocterzyd"
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/manyidu"
+            />
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1"
+            android:layout_below="@id/drocterzyd"
+            android:isIndicator="false"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/drocterzyd"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_toRightOf="@id/ratingBar1"
+            android:layout_below="@id/xx"
+            android:layout_marginLeft="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/xxx"
+            android:visibility="gone"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#E7DADA"
+            android:layout_below="@id/ratingBar2"
+            android:layout_height="2dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="250dp"
+            android:id="@+id/fh"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="250dp"
+            android:id="@+id/wc"
+            />
+    </RelativeLayout>
+</LinearLayout>

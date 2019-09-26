@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mine_user_sign_in" translatable="true">Sign in</string>
+    <string name="mine_user_physician_visits" translatable="true">My physician visits</string>
+    <string name="mine_user_now" translatable="true">The physician visits</string>
+    <string name="mine_user_histroy" translatable="true">Histroy</string>
+
+    <string name="mine_user_archives" translatable="true">Files</string>
+    <string name="mine_user_wallet" translatable="true">Wallet</string>
+    <string name="mine_user_collection" translatable="true">Collections</string>
+    <string name="mine_user_suggestion" translatable="true">Advice</string>
+    <string name="mine_user_videos" translatable="true">Videos</string>
+    <string name="mine_user_patient" translatable="true">Circle</string>
+    <string name="mine_user_attention" translatable="true">Attention</string>
+    <string name="mine_user_task" translatable="true">Task</string>
+    <string name="mine_user_settings" translatable="true">Settings</string>
+
+
+    <string name="mine_set_settings" translatable="true">Settings</string>
+    <string name="mine_set_settings_pwd" translatable="true">Change the password</string>
+    <string name="mine_set_settings_cache" translatable="true">Clear the cache</string>
+    <string name="mine_set_settings_brightness" translatable="true">The screen brightness</string>
+    <string name="mine_set_settings_version" translatable="true">Version checking</string>
+    <string name="mine_set_settings_help" translatable="true">Help</string>
+    <string name="mine_set_settings_about" translatable="true">About us</string>
+    <string name="mine_set_settings_invite" translatable="true">Invite friends</string>
+    <string name="mine_set_settings_exit" translatable="true">Log out</string>
+
+</resources>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wd.health.activity.CircleActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/sick_title_appbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginLeft="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/sick_publish_title"
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:hint="请输入标题（最多二十个字）"
+                android:paddingBottom="@dimen/dp_10"
+                android:textColorHint="#999999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sick_publish_department"
+                    android:layout_width="@dimen/dp_310"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:focusable="false"
+                    android:padding="@dimen/dp_10"
+                    android:text="请选择就诊科室"
+                    android:textColorHint="#999999" />
+
+                <ImageView
+                    android:id="@+id/sick_publish_imgdepartment"
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:src="@drawable/common_icon_drop_down_n" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sick_publish_sick"
+                    android:layout_width="@dimen/dp_310"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:focusable="false"
+                    android:padding="@dimen/dp_10"
+                    android:text="请选择主要病症"
+                    android:textColorHint="#999999" />
+
+                <ImageView
+                    android:id="@+id/sick_publish_imgsick"
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:src="@drawable/common_icon_drop_down_n"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/sick_publish_detail"
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@null"
+                android:hint="请输入病情详情" />
+
+            <EditText
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_50"
+                android:focusable="false"
+                android:gravity="right"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="不超过30字"
+                android:textColor="#549CEF"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="请输入最近一段治疗经历"
+                android:textColor="#717171"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_330"
+                android:layout_height="@dimen/dp_250"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/one_selector"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/sick_publish_hospital"
+                    android:layout_width="@dimen/dp_320"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入医院名称"
+                    android:padding="@dimen/dp_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sick_publish_starttime"
+                        android:layout_width="@dimen/dp_310"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:focusable="false"
+                        android:padding="@dimen/dp_10"
+                        android:text="请选择开始时间"
+                        android:textColorHint="#999999" />
+
+                    <ImageView
+                        android:id="@+id/sick_publish_img_starttime"
+                        android:layout_width="@dimen/dp_16"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_25"
+                        android:src="@drawable/common_icon_drop_down_n" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sick_publish_endtime"
+                        android:layout_width="@dimen/dp_310"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:focusable="false"
+                        android:padding="@dimen/dp_10"
+                        android:text="请选择结束时间"
+                        android:textColorHint="#999999" />
+
+                    <ImageView
+                        android:id="@+id/sick_publish_img_endtime"
+                        android:layout_width="@dimen/dp_16"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_25"
+                        android:src="@drawable/common_icon_drop_down_n" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sick_publish_process"
+                    android:layout_width="@dimen/dp_310"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入治疗过程" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="#F2F2F2"
+                android:gravity="center"
+                android:text="最多添加6张图片，长按为图片排序"
+                android:textColor="#7A7A7A"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/sick_publish_pictureId"
+                android:layout_width="@dimen/dp_77"
+                android:layout_height="@dimen/dp_72"
+                android:layout_marginTop="@dimen/dp_20"
+                android:src="@drawable/girl" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="#F2F2F2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="提升悬赏额度"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/sp_12" />
+
+                <Switch
+                    android:id="@+id/sick_publish_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:checked="true"
+                    android:showText="true"
+                    android:switchMinWidth="20dp"
+                    android:textOff="关"
+                    android:textOn="开"
+                    android:thumb="@drawable/button"
+                    android:track="@drawable/button_background_bllue" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="提升悬赏额度可以获得更多关注，得到更多建议"
+                android:textColor="#636363"
+                android:textSize="@dimen/sp_10" />
+
+            <RadioGroup
+                android:id="@+id/sick_publish_rg"
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sp_10"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sick_publish_rb_1"
+                    android:layout_width="@dimen/dp_104"
+                    android:layout_height="@dimen/dp_52"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:background="@drawable/selector_one_count"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="10H币"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp_16" />
+
+                <RadioButton
+                    android:id="@+id/sick_publish_rb_2"
+                    android:layout_width="@dimen/dp_104"
+                    android:layout_height="@dimen/dp_52"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:background="@drawable/selector_one_count"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="20H币"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp_16" />
+
+                <RadioButton
+                    android:id="@+id/sick_publish_rb_3"
+                    android:layout_width="@dimen/dp_104"
+                    android:layout_height="@dimen/dp_52"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:background="@drawable/selector_one_count"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="30H币"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp_16" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/sick_publish_amount"
+                android:layout_width="@dimen/dp_104"
+                android:layout_height="@dimen/dp_52"
+                android:layout_marginTop="@dimen/sp_10"
+                android:background="@drawable/selector_one_count"
+                android:gravity="center"
+                android:hint="自定义" />
+
+            <Button
+                android:id="@+id/sick_publish_sure"
+                android:layout_width="@dimen/dp_300"
+                android:layout_height="@dimen/dp_36"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/button_shape"
+                android:text="发布"
+                android:textColor="#E3EFFC"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

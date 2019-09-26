@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wd.health.patient">
+
+    <application>
+        <activity android:name="com.wd.health.activity.CircleActivity"></activity>
+        <activity android:name="com.wd.health.activity.DetailsActivity" />
+        <activity android:name="com.wd.health.activity.SearchActivity" />
+    </application>
+
+</manifest>

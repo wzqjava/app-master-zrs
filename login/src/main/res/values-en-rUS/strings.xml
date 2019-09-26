@@ -1,0 +1,39 @@
+<resources>
+    <string name="welcome_tv" translatable="true">©An app made by a group of weaklings</string>
+
+    <string name="guide_page_one" translatable="true">Professional online consultation</string>
+    <string name="guide_page_two" translatable="true">Rich health knowledge</string>
+    <string name="guide_page_three" translatable="true">A first-class hospital department</string>
+    <string name="guide_page_four" translatable="true">Top pharmaceutical companies</string>
+    <string name="guide_page_five" translatable="true">Get your body right</string>
+    <string name="guide_page_bt" translatable="true">Enter</string>
+
+
+    <string name="forgot_pwd_email" translatable="true">Please input your email</string>
+    <string name="forgot_pwd_code" translatable="true">Please enter verification code</string>
+    <string name="forgot_pwd_next" translatable="true">Next</string>
+    <string name="forgot_pwd_get_code" translatable="true">get code</string>
+
+    <string name="login_phone_et" translatable="true">Please enter the phone number</string>
+    <string name="login_pwd_et" translatable="true">Please enter the password</string>
+    <string name="login_fast_registered" translatable="true">Register now</string>
+    <string name="login_login_bt" translatable="true">Login</string>
+    <string name="login_new_pwd" translatable="true">Set a new password</string>
+    <string name="login_correct_phone" translatable="true">Please enter the correct phone number</string>
+    <string name="login_correct_email" translatable="true">Please enter the correct email</string>
+    <string name="login_correct_pwd" translatable="true">Please enter the correct password</string>
+    <string name="login_correct_new_pwd" translatable="true">Enter the new password</string>
+    <string name="login_correct_new_pwd_enter" translatable="true">Confirm the new password again</string>
+    <string name="login_done" translatable="true">finished</string>
+    <string name="login_email" translatable="true">Please enter email</string>
+    <string name="login_forgot_pwd" translatable="true">Forgot password</string>
+    <string name="login_no_account" translatable="true">No account ?</string>
+    <string name="login_other_login_methods" translatable="true">Other login methods</string>
+
+    <string name="registered_sent" translatable="true">Has been sent</string>
+    <string name="registered_register" translatable="true">Registered</string>
+    <string name="registered_change_add" translatable="true">optional</string>
+    <string name="registered_invite_code" translatable="true">Please enter the invitation code</string>
+    <string name="registered_pwd_false" translatable="true">Password inconsistency</string>
+
+</resources>

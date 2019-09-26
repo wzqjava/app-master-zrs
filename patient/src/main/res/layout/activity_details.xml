@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wd.health.activity.DetailsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/girl"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_24"
+            android:src="@drawable/girl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@+id/girl"
+            android:text="急寻：面神经的治疗方法"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:id="@+id/details_name"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@drawable/common_nav_message_black_n" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#cccc"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textSize="@dimen/dp_20"
+            android:textColor="#3087EA"
+            android:id="@+id/d_title"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="[病症]"
+            android:textColor="#3087EA"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="面神经炎"
+            android:layout_marginTop="@dimen/dp_8"
+            android:id="@+id/d_disease"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="[科室]"
+            android:textColor="#3087EA"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内科"
+            android:layout_marginTop="@dimen/dp_8"
+            android:id="@+id/d_department"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="[病症详情]"
+            android:textColor="#3087EA"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="周围神经枢纽，口齿不清，面瘫"
+            android:layout_marginTop="@dimen/dp_8"
+            android:id="@+id/d_detail"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="[治疗经历]"
+            android:textColor="#3087EA"
+            android:textSize="15sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全球最高人民医院"
+                android:layout_marginTop="@dimen/dp_8"
+                android:id="@+id/d_treatmentProcess"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2018-12-03"
+                android:id="@+id/d_treatmentStartTime"
+                android:layout_marginTop="5dp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="[相关图片]"
+            android:textColor="#3087EA"
+            android:textSize="15sp"
+            />
+       <!-- <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/girl"
+            android:id="@+id/d_picture"
+            />-->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/girl"
+            android:id="@+id/d_picture"
+            android:layout_marginTop="10dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="220dp"
+                android:id="@+id/d_img1"
+                android:background="@drawable/common_button_collection_small_n"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/d_img1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="3"
+                android:textSize="16dp"
+                android:id="@+id/d_collectionNum"
+                />
+
+            <ImageView
+                android:layout_toRightOf="@+id/d_collectionNum"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/d_img2"
+                android:background="@drawable/common_icon_comment_large_n"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/d_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="102"
+                android:textSize="16dp"
+                android:id="@+id/d_commentNum"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="被采纳的建议"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+           <!--     <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/girl"
+                    android:id="@+id/d_adoptHeadPic"
+                    />-->
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/girl"
+                    android:id="@+id/d_adoptHeadPic"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="猪小妹"
+                    android:layout_toRightOf="@id/d_adoptHeadPic"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/d_adoptNickName"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2018.09.20"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/d_adoptTime"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_adoptComment"
+                android:text="这地方沙发斯蒂芬所发生的发送到胜多负少的水电费水电费胜多负少的防守打法胜多负少的的水电费地方似懂非懂是"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <ViewStub
+        android:id="@+id/view_Stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/view_stub1" />
+
+    <ViewStub
+        android:id="@+id/sick_details_alert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/sick_comment_alert" />
+</LinearLayout>

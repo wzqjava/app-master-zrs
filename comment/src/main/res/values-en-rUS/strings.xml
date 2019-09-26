@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="utils_exception_parsing_exception" translatable="true">Parsing exceptions</string>
+    <string name="not_net_text_refresh" translatable="true">Network exception please refresh and try again</string>
+    <string name="base_activity_exit" translatable="true">Click again to exit the program</string>
+    <string name="not_net_text_refresh_again" translatable="true">Reload</string>
+    <string name="not_net_text" translatable="true">The network connection is not available</string>
+    <string name="no_info_add" translatable="true">Add</string>
+    <string name="no_wechat" translatable="true">You have not installed the WeChat APP</string>
+    <string name="wechat_share_no" translatable="true">Share the failure</string>
+    <string name="wechat_login_no" translatable="true">Login failed</string>
+    <string name="wechat_share" translatable="true">WeChat share success</string>
+
+
+</resources>

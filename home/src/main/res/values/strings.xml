@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">home</string>
+    <string name="errcode_success">成功</string>
+    <string name="errcode_cancel">返回</string>
+    <string name="errcode_deny">失败</string>
+    <string name="errcode_unsupported">不知道呀</string>
+    <string name="errcode_unknown">还是不知道</string>
+</resources>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mine.settings.MySettingsActivity">
+
+    <include
+        android:id="@+id/settings_title"
+        layout="@layout/layout_top_navigation_black" />
+
+    <RelativeLayout
+        android:id="@+id/settings_user_rl"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_title">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/settings_user_iv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_user_name"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/settings_user_iv"
+            android:text="@string/not_net_text"
+            tools:ignore="RelativeOverlap" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings_user_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/my_icon_next_n" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_user_line1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorAppGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_rl" />
+
+    <RelativeLayout
+        android:id="@+id/settings_pwd_rl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_line1">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_pwd"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_set_settings_pwd"
+            tools:ignore="RelativeOverlap" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings_pwd_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/my_icon_next_n" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_user_line2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorAppGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_pwd_rl" />
+
+    <RelativeLayout
+        android:id="@+id/settings_cache_rl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_line2">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_cache"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_set_settings_cache"
+            tools:ignore="RelativeOverlap" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_cache_num"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/settings_cache_next" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings_cache_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/my_icon_next_n" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_user_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorAppGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_cache_rl" />
+
+    <RelativeLayout
+        android:id="@+id/settings_brightness_rl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_line3">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_brightness"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_set_settings_brightness"
+            tools:ignore="RelativeOverlap" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings_brightness_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/my_icon_next_n" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_user_line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorAppGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_brightness_rl" />
+
+    <RelativeLayout
+        android:id="@+id/settings_version_rl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_line4">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_version"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_set_settings_version"
+            tools:ignore="RelativeOverlap" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings_version_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/my_icon_next_n" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_user_line5"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorAppGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_version_rl" />
+
+
+    <RelativeLayout
+        android:id="@+id/settings_help_rl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_line5">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_help"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_set_settings_help"
+            tools:ignore="RelativeOverlap" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings_help_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/my_icon_next_n" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_user_line6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorAppGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_help_rl" />
+
+    <RelativeLayout
+        android:id="@+id/settings_about_rl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_line6">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_about"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_set_settings_about"
+            tools:ignore="RelativeOverlap" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings_about_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/my_icon_next_n" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_user_line7"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorAppGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_about_rl" />
+
+    <RelativeLayout
+        android:id="@+id/settings_invite_rl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_line7">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/settings_invite"
+            style="@style/TV14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_set_settings_invite"
+            tools:ignore="RelativeOverlap" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings_invite_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/my_icon_next_n" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_user_line8"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorAppGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_invite_rl" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/settings_exit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="@string/mine_set_settings_exit"
+        android:textColor="@color/colorAppRed"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_user_line8" />
+</android.support.constraint.ConstraintLayout>

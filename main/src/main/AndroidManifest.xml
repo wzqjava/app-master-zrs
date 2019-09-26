@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wd.health.main">
+
+    <application>
+        <activity android:name=".mine.settings.MySettingsActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name="com.wd.health.home.activity.ChatActivity" />
+        <activity android:name="com.wd.health.home.activity.ChatActivity2" />
+        <activity android:name="com.wd.health.home.activity.InquiryActivity" />
+        <activity android:name="com.wd.health.home.activity.FAQActivity" />
+        <activity android:name="com.wd.health.home.activity.CurrentCActivity" />
+        <activity android:name="com.wd.health.home.activity.InformationActivity" />
+        <activity android:name="com.wd.health.home.activity.SpecialHistoryActivity"/>
+        <activity android:name="com.wd.health.home.activity.BingZenXqActivity"/>
+        <activity android:name="com.wd.health.home.activity.EvaluateActivity"/>
+        <activity
+            android:name="com.wd.health.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+
+
+        <activity android:name=".mine.archives.MyArchivesActivity">
+
+        </activity>
+        <activity android:name=".mine.MineActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/MainActiivtyTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+
+        </activity>
+        <activity android:name="com.wd.health.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.wd.health.home.service.IMService" />
+    </application>
+
+</manifest>

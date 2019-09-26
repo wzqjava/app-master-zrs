@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppDeepBlack">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_item_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.dueeeke.videoplayer.player.VideoView
+        android:id="@+id/video_item_vv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:looping="true"
+        app:screenScaleType="type_default" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_item_player_iv"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/common_icon_time_out_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/video_item_title_tv"
+            style="@style/TV16White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="健身" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/video_item_describe_tv"
+            style="@style/TV12White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_item_title_tv"
+            android:layout_marginTop="14dp"
+            android:lineSpacingMultiplier="1.4"
+            android:text="健身健身健身健身健身健身健身健身健身健身健身健身健身健身健身健身健身健身健身健身健身健身" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_item_function_rl"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/video_item_buy_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/common_icon_toll_n" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/video_item_comment_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/common_icon_comment_samll_s"
+            android:visibility="gone" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/video_item_collection_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/video_item_buy_iv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/common_button_collection_small_n" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/video_item_danmu_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/video_item_collection_iv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/common_icon_open_live_commenting_n" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/video_item_buy_num"
+            style="@style/TV10White"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/video_item_danmu_iv"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="x人已购买" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_item_toast"
+        style="@style/TV10White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_item_function_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_item_function_rl" />
+
+    <ProgressBar
+        android:id="@+id/video_item_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

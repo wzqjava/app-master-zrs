@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name" translatable="false">Login</string>
+
+    <string name="welcome_tv" translatable="true">©一群菜鸡做的APP</string>
+
+    <string name="guide_page_one" translatable="true">专业的在线问诊</string>
+    <string name="guide_page_two" translatable="true">丰富的健康知识</string>
+    <string name="guide_page_three" translatable="true">一流的医院科室</string>
+    <string name="guide_page_four" translatable="true">顶级的制药厂商</string>
+    <string name="guide_page_five" translatable="true">练就你的金身不坏</string>
+    <string name="guide_page_bt" translatable="true">马上进入</string>
+
+
+    <string name="forgot_pwd_email" translatable="true">请输入邮箱账号</string>
+    <string name="forgot_pwd_code" translatable="true">请输入验证码</string>
+    <string name="forgot_pwd_next" translatable="true">下一步</string>
+    <string name="forgot_pwd_get_code" translatable="true">获取验证码</string>
+
+    <string name="login_phone_et" translatable="true">请输入手机号</string>
+    <string name="login_pwd_et" translatable="true">请输入密码</string>
+    <string name="login_fast_registered" translatable="true">立即注册</string>
+    <string name="login_login_bt" translatable="true">登录</string>
+    <string name="login_new_pwd" translatable="true">设置新密码</string>
+    <string name="login_correct_phone" translatable="true">请输入正确的手机号</string>
+    <string name="login_correct_email" translatable="true">请输入正确的邮箱</string>
+    <string name="login_correct_pwd" translatable="true">请输入密码</string>
+    <string name="login_correct_new_pwd" translatable="true">请设置新密码</string>
+    <string name="login_correct_new_pwd_enter" translatable="true">请再次确认密码</string>
+    <string name="login_email" translatable="true">请输入邮箱</string>
+    <string name="login_forgot_pwd" translatable="true">忘记密码</string>
+    <string name="login_no_account" translatable="true">暂无账号？</string>
+    <string name="login_other_login_methods" translatable="true">其他登录方式</string>
+    <string name="login_done" translatable="true">完成</string>
+
+    <string name="registered_sent" translatable="true">已发送</string>
+    <string name="registered_register" translatable="true">注册</string>
+    <string name="registered_change_add" translatable="true">选填</string>
+    <string name="registered_invite_code" translatable="true">请输入邀请码</string>
+    <string name="registered_pwd_false" translatable="true">两次密码不一致</string>
+
+</resources>

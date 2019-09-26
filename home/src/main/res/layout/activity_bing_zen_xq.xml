@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.BingZenXqActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wd.health.home.customview.IncludeHeader
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:headerImage="@drawable/common_icon_back_black_n"
+            app:headerMessage="1"
+            app:headerText="病症详情"></com.wd.health.home.customview.IncludeHeader>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#E4D2D2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="#F32929"
+            android:gravity="center"
+            android:text="本模块知识仅供参考,如有需要,请在医生指导下使用"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/drugs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/drugs_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="小儿氨酚黄那敏颗粒"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[药品成分]"
+                android:textColor="#2B2516"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/drugs_component"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[用药禁忌]"
+                android:textColor="@color/colorAppBlue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/drugs_taboo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[功能主治]"
+                android:textColor="#2B2516"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/drugs_function"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[用法用量]"
+                android:textColor="#2B2516"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/drugs_consumption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[药品性状]"
+                android:textColor="#2B2516"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/drugs_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[包装规格]"
+                android:textColor="#2B2516"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/drugs_packing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[不良反应]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/drugs_reaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[贮藏条件]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/drugs_storage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[注意事项]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/drugs_matter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[批准文号]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/drugs_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/disease_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/bztext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="慢性肝炎"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[病理]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/bl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[症状]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/zz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[宜与忌]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/yyj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[西药治疗]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/xyzl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="[中药治疗]"
+                android:textColor="#2B2516"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/zyzl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无"
+                android:textColor="#2B2516"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

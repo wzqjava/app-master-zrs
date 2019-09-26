@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IncludeTitle">
+        <attr name="mText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="IncludeImageOne">
+        <attr name="mTextOne" format="string"/>
+        <attr name="mImageOne" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="IncludeHeader">
+        <attr name="headerText" format="string"/>
+        <attr name="headerImage" format="reference"/>
+        <attr name="headerMessage" format="integer"/>
+    </declare-styleable>
+
+</resources>

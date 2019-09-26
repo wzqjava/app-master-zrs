@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--蓝色                    APP主要颜色，常用于按钮，文本的默认状态 -->
+    <color name="colorAppBlue">#3087EA</color>
+    <color name="colorAppLightBlue">#619fE5</color>
+    <color name="colorAppLightBlue2">#A3C2E5</color>
+    <color name="colorAppDeepBlue">#2972c5</color>
+    <color name="colorAppBlueA">#1A3087EA</color>
+
+    <!--红色                    APP主要辅色，常用特殊强调，引起用户注意的部分 -->
+    <color name="colorAppRed">#D92109</color>
+
+    <!--浅绿色                  辅色，用于极个别并列状态的颜色 -->
+    <color name="colorAppLightGreen">#4FCB9F</color>
+
+    <!--深灰色偏黑              APP文本的主要颜色，用于大多数文字 -->
+    <color name="colorAppBlack">#333333</color>
+    <color name="colorAppDeepBlack">#000000</color>
+    <color name="colorAppDeepBlackA">#33000000</color>
+    <color name="colorAppLightBlack">#999999</color>
+
+    <!--灰色                    用于线条-->
+    <color name="colorAppGrey">#F2F2F2</color>
+    <!--深灰色                  APP文本的辅助颜色，常用语提示输入文本，与选中状态对应文本等 -->
+    <color name="colorAppDrakGrey">#999999</color>
+    <!--浅灰色                  极个别辅助色，多用于APP中灰色的图形等，例如：搜索框 -->
+    <color name="colorAppLightGrey">#DDDDDD</color>
+
+    <!--白色                    辅助颜色，多用于蓝色按钮上 -->
+    <color name="colorAppWhite">#FFFFFF</color>
+    <color name="colorAppWhite60">#66FFFFFF</color>
+    <color name="colorAppWhite30">#B3FFFFFF</color>
+
+    <!--透明灰色                -->
+    <color name="colorGreyA">#80656565</color>
+
+    <color name="colorDefaultShadowBack">#2a000000</color>
+</resources>

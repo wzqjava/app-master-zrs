@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">comment</string>
+    <string name="not_net_text" translatable="true">网络连接不可用</string>
+    <string name="not_net_text_refresh" translatable="true">网络异常 请刷新重试</string>
+    <string name="not_net_text_refresh_again" translatable="true">重新加载</string>
+    <string name="base_activity_exit" translatable="true">再按一次退出程序</string>
+    <string name="utils_exception_parsing_exception" translatable="true">解析异常</string>
+    <string name="no_info_add" translatable="true">添加</string>
+    <string name="no_wechat" translatable="true">您还未安装微信客户端</string>
+    <string name="wechat_share_no" translatable="true">分享失败</string>
+    <string name="wechat_login_no" translatable="true">登录失败</string>
+    <string name="wechat_share" translatable="true">微信分享成功</string>
+
+</resources>

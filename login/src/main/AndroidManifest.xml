@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wd.health.login">
+
+    <application>
+        <activity android:name=".welcome.WelcomeActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+        <activity android:name=".guidepage.GuidePageActivity"></activity>
+        <activity android:name=".RegisteredActivity"></activity>
+        <activity android:name=".ForgotPwdActivity">
+
+        </activity>
+        <activity android:name=".NewPwdActivity" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

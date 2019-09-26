@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 对话框默认样式 -->
+    <style name="BaseDialogStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <!-- @android:style/Theme.Dialog -->
+        <!-- 无边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 浮在 Activity 之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 遮盖层 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 动画效果 -->
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+        <!-- Base.Theme.AppCompat.Light.Dialog.Alert 特有的属性，用于指定默认宽度，这里需要禁用 -->
+        <item name="android:windowMinWidthMajor">0dp</item>
+        <item name="android:windowMinWidthMinor">0dp</item>
+        <!-- 解决 ActionBar 占位导致 Dialog 无法全屏显示的问题 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- ActionMode覆盖Actionbar，不顶下来 -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Dialog 全屏显示 -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <!-- 对话框无遮盖层样式 -->
+    <style name="TransparentDialogStyle" parent="BaseDialogStyle">
+        <!-- 遮盖层 -->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- 缩放动画 -->
+    <style name="ScaleAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+    </style>
+
+    <!-- 顶部弹出动画 -->
+    <style name="TopAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_top_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_out</item>
+    </style>
+
+    <!-- 底部弹出动画 -->
+    <style name="BottomAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_out</item>
+    </style>
+
+    <!-- 左边弹出动画 -->
+    <style name="LeftAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_left_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_left_out</item>
+    </style>
+
+    <!-- 右边弹出动画 -->
+    <style name="RightAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_right_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_right_out</item>
+    </style>
+
+
+    <!-- 文字 重要 标准字          常用于大标题、导航栏、主要按钮等-->
+    <!-- 16sp 黑色文字 -->
+    <style name="TV16Black">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAppBlack</item>
+    </style>
+    <!-- 16sp 黑色文字 -->
+    <style name="TV16LightBlack">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAppBlack</item>
+    </style>
+    <!-- 16sp 白色文字 -->
+    <style name="TV16White">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+    </style>
+    <!-- 14sp 黑色文字 -->
+    <style name="TV14Black">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAppBlack</item>
+    </style>
+    <!-- 16sp 白色文字 -->
+    <style name="TV14White">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+    </style>
+
+    <style name="TV14LightBlack">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@color/colorAppLightBlack</item>
+    </style>
+    <!-- 12sp 黑色文字 -->
+    <style name="TV12Black">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorAppBlack</item>
+    </style>
+    <!-- 12sp 白色文字 -->
+    <style name="TV12White">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+    </style>
+    <!-- 10sp 黑色文字 -->
+    <style name="TV10Black">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorAppBlack</item>
+    </style>
+    <!-- 10sp 白色文字 -->
+    <style name="TV10White">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+    </style>
+    <!-- 按钮文字颜色 -->
+    <style name="BT_TV_Blue">
+        <item name="android:textColor">#3087EA</item>
+    </style>
+
+    <style name="BT_TV_White">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+    <!-- 图标 -->
+    <!-- 功能性图标                代表可操作的信息，如底部导航栏图标等-->
+    <!-- 16dp默认图标 -->
+    <style name="IV16False">
+        <item name="android:width">16dp</item>
+        <item name="android:height">16dp</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <!-- 16dp选中图标 -->
+    <style name="IV16True">
+        <item name="android:width">16dp</item>
+        <item name="android:height">16dp</item>
+        <item name="android:checked">true</item>
+    </style>
+
+    <!-- 24dp默认图标 -->
+    <style name="IV24False">
+        <item name="android:width">24dp</item>
+        <item name="android:height">24dp</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <!-- 24dp选中图标 -->
+    <style name="IV24True">
+        <item name="android:width">24dp</item>
+        <item name="android:height">24dp</item>
+        <item name="android:checked">true</item>
+    </style>
+
+    <!-- 30dp默认图标 -->
+    <style name="IV30False">
+        <item name="android:width">30dp</item>
+        <item name="android:height">30dp</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <!-- 30dp选中图标 -->
+    <style name="IV30True">
+        <item name="android:width">30dp</item>
+        <item name="android:height">30dp</item>
+        <item name="android:checked">true</item>
+    </style>
+
+    <!-- 48dp默认图标 -->
+    <style name="IV48False">
+        <item name="android:width">48dp</item>
+        <item name="android:height">48dp</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <!-- 48dp选中图标 -->
+    <style name="IV48True">
+        <item name="android:width">48dp</item>
+        <item name="android:height">48dp</item>
+        <item name="android:checked">true</item>
+    </style>
+
+    <!-- 示意性图标                用于指示无需用户操作的信息等-->
+    <!-- 16dp图标 -->
+    <style name="IV16">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+    </style>
+
+    <!-- 20dp图标 -->
+    <style name="IV20">
+        <item name="android:width">20dp</item>
+        <item name="android:height">20dp</item>
+    </style>
+
+    <!-- 24dp图标 -->
+    <style name="IV24">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <!-- 30dp图标 -->
+    <style name="IV30">
+        <item name="android:width">30dp</item>
+        <item name="android:height">30dp</item>
+    </style>
+    <!-- 32dp图标 -->
+    <style name="IV32">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+
+    <!-- 按钮 -->
+    <!-- 默认状态    蓝色背景 -->
+    <style name="BTBule">
+        <item name="android:width">300dp</item>
+        <item name="android:height">36dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+        <item name="android:background">@drawable/shape_blue_btn</item>
+    </style>
+    <!-- 点击状态    蓝色背景 -->
+    <style name="BTBuleClick">
+        <item name="android:width">300dp</item>
+        <item name="android:height">36dp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_blue_btn_click</item>
+    </style>
+    <!-- 不可点击状态    蓝色背景 -->
+    <style name="BTBuleUnClick">
+        <item name="android:width">300dp</item>
+        <item name="android:height">36dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/shape_blue_btn_unclick</item>
+    </style>
+
+    <!-- 默认状态 白色背景 -->
+    <style name="BTWhite">
+        <item name="android:width">300dp</item>
+        <item name="android:height">36dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAppBlue</item>
+        <item name="android:background">@drawable/shape_white_btn</item>
+    </style>
+    <!-- 点击状态 灰色背景 -->
+    <style name="BTWhiteClick">
+        <item name="android:width">300dp</item>
+        <item name="android:height">36dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAppBlue</item>
+        <item name="android:background">@drawable/shape_white_btn_click</item>
+    </style>
+
+    <!-- 默认状态 白色背景 小的按钮 -->
+    <style name="BTWhiteSmall">
+        <item name="android:width">58dp</item>
+        <item name="android:height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAppBlue</item>
+        <item name="android:background">@drawable/shape_white_btn</item>
+    </style>
+    <!-- 默认状态 蓝色背景 小的按钮 -->
+    <style name="BTBlueSmallClick">
+        <item name="android:width">52dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">24dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+        <item name="android:background">@drawable/shape_blue_btn</item>
+    </style>
+    <!-- 不可点击状态 蓝色背景 小的按钮 -->
+    <style name="BTBlueSmallUnClick">
+        <item name="android:width">52dp</item>
+        <item name="android:height">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+        <item name="android:background">@drawable/shape_blue_btn_unclick_small</item>
+    </style>
+
+    <!-- 默认状态 蓝色背景 中等偏小按钮 -->
+    <style name="BTBlueMediumClick">
+        <item name="android:width">84dp</item>
+        <item name="android:height">34dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+        <item name="android:background">@drawable/shape_blue_btn</item>
+    </style>
+    <!-- 默认状态 蓝色背景 中等偏小按钮 -->
+    <style name="BTDeepGreyMediumClick">
+        <item name="android:width">84dp</item>
+        <item name="android:height">34dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAppWhite</item>
+        <item name="android:background">@drawable/shape_deep_grey_btn</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAppBlack</item>
+
+        <item name="colorPrimaryDark">@color/colorAppBlueA</item>
+        <item name="colorAccent">@color/colorAppGrey</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
